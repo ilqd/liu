@@ -42,7 +42,7 @@ export const data = {
             id: 3,
             question: 'Как зовут учителя?',
             answerType: 'text',
-            possibleAnswers: ['Люба', 'Любовь', 'Любашка']
+            correctAnswers: ['Люба', 'Любовь', 'Любашка']
         }
     ]
 };
