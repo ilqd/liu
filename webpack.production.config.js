@@ -19,6 +19,12 @@ module.exports = {
         filename: '[name]-[hash].min.js',
         publicPath: '/'
     },
+    resolve : {
+      extensions : [ '', '.js', '.jsx' ],
+      root: [
+        path.resolve('./app')
+      ]
+    },
     plugins: [
         // webpack gives your modules and chunks ids to identify them. Webpack can vary the
         // distribution of the ids to get the smallest id length for often used ids with

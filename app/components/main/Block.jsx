@@ -10,7 +10,9 @@ export default class Block extends React.Component {
     }
 }
 Block.propTypes = {
-    children: React.PropTypes.object,
+    children: React.PropTypes.oneOfType(
+      [React.PropTypes.object,
+        React.PropTypes.array]),
     className: React.PropTypes.string,
     url: React.PropTypes.string,
 };

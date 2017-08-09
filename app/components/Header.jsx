@@ -7,11 +7,11 @@ export default class Header extends React.Component {
         return (
       <Navbar fixedTop style={{width: '100vw', maxWidth: '100%'}}>
         <Navbar className="title-bar row">
-          <Navbar.Brand style={{ display: 'flex'}}>
+          <Navbar.Brand style={{ display: 'flex', paddingRight: 1}}>
             <img src={logo} style={{height: '2em'}}/>
             <div className="brand-text">SPLASH<br/>COURSE</div>
           </Navbar.Brand>
-          <Navbar.Brand pullRight className="pull-right" style={{margin: 0}}>
+          <Navbar.Brand pullRight className="pull-right" style={{margin: 0, paddingLeft: 1}}>
             <div>Наши телефоны</div>
             <div>﻿+7 919 775 97 63</div>
           </Navbar.Brand>

@@ -10,7 +10,7 @@ module.exports = {
         'babel-polyfill',
         'webpack-dev-server/client?http://localhost:3000',
         'webpack/hot/only-dev-server',
-        'react-hot-loader/patch',      
+        'react-hot-loader/patch',
         path.join(__dirname, 'app/index.js')
     ],
     output: {
@@ -18,6 +18,12 @@ module.exports = {
         filename: '[name].js',
         publicPath: '/'
     },
+    resolve : {
+  		extensions : [ '', '.js', '.jsx' ],
+  		root: [
+  			path.resolve('./app')
+  		]
+  	},
     plugins: [
         new HtmlWebpackPlugin({
           template: 'app/index.tpl.html',

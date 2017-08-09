@@ -13,9 +13,6 @@ html{
   margin: 0;
   border: 0;
 }
-.title-bar{
-  height: 45px;
-}
 .second-navbar{
   background-color: #00535f;
   display: flex;
@@ -29,6 +26,10 @@ html{
 }
 .navbar-default .navbar-toggle .icon-bar{
   background-color:white;
+}
+.navbar-default {
+  background: white;
+  box-shadow: none;
 }
 .navbar-default .navbar-toggle{
   padding: 8px;
@@ -60,6 +61,7 @@ html{
   margin-top: 5px;
   box-shadow: none;
   border: none;
+  height: 45px;
 }
 
 .carousel .item img {
@@ -78,8 +80,12 @@ html{
   margin-top:5px;
   margin-bottom: 5px;
 }
+.blocks,
+.blocks div,
+.blocks a {
+  min-height: 150px;
+}
 .blocks > div {
-  display: flex;
   margin-bottom: 2px;
 }
 
