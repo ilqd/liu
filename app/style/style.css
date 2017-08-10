@@ -166,3 +166,16 @@ html{
   width: 100vw;
   margin-top: 5px;
 }
+.btn{
+  border-radius: 0;
+}
+.border-bottom{
+  border-bottom: 1px solid #37bdbf;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+}
+.border-top{
+  border-top: 1px solid #37bdbf;
+  margin-top: 2px;
+  padding-top: 2px;
+}

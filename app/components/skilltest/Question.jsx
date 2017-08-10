@@ -24,10 +24,10 @@ class Question extends React.Component {
     }
     saveAnswerCheckbox(e) {
         let newValue = this.props.results ? this.props.results : new Set();
-        if (e.target.value == 'on') {
+        if (!newValue.has(e.target.id.toString())) {
             newValue = newValue.add(e.target.id);
         }else{
-            newValue - newValue.delete(e.target.id);
+            newValue = newValue.delete(e.target.id.toString());
         }
         this.props.answerGiven(newValue);
     }
@@ -92,7 +92,7 @@ class Question extends React.Component {
     }
     render() {
         return(
-      <div>
+      <div className="border-bottom">
       <Row>
       <Col xs={12}>
         {this.props.data.get('question')}
