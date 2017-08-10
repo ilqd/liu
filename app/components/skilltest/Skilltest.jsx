@@ -48,7 +48,6 @@ class Skilltest extends React.Component {
               </Button>
               }
             </Col>
-          <Row>
             <Col xs={6}>
             {this.state.questionIdx >= this.getQuestionsCount() - 1 ? '' :
               <Button onClick={this.next} style={{float: 'left'}}>
@@ -56,7 +55,6 @@ class Skilltest extends React.Component {
               </Button>
               }
             </Col>
-          </Row>
         </Row>
       </div>
     );

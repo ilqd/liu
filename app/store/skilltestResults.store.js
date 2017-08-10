@@ -11,5 +11,5 @@ export const skilltestResultsReducer = (state = Map(), action) => {
             return state;
     }
 };
-export const loadData = (dispatch, questionId, answer) =>
+export const answerGiven = (dispatch, questionId, answer) =>
 dispatch({ type: 'ANSWER_GIVEN', questionId, answer });
